@@ -1,0 +1,30 @@
+:root{
+    --white: #FFFFFF;
+    --gray-text-lines: #e1e1e6;
+    --gray-text: #c4c4cc;
+    --gray-text-apoio: #8d8d99;
+    --gray-background: #121214;
+    --gray-cards: #202024;
+    --gray-divider: #323238;
+    --gray-placeholder: #7c7c8a;
+    --purple-darker: #3b0087;
+    --purple: #7a22d3;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--gray-background);
+    color: var(--gray-text);
+    -webkit-font-smoothing: antialiased;
+}
+
+body, input, textarea, button{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
