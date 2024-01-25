@@ -2,17 +2,9 @@
     display: grid;
     grid-template-columns: 16rem 1fr;
     gap: 2rem;
+    align-items: flex-start;
+
     max-width: 70rem;
-    background-color: lightgrey;
-    margin: auto 10rem;
-    padding: 1rem;
-    
-}
-
-aside{
-    background-color: purple;
-}
-
-main{
-    background-color: blue;
+    margin: 2rem auto;
+    padding: 0 1rem;
 }
