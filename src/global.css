@@ -11,6 +11,10 @@
     --purple: #7a22d3;
 }
 
+:focus{
+    outline: none;
+}
+
 *{
     margin: 0;
     padding: 0;

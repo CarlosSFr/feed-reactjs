@@ -1,0 +1,125 @@
+.post{
+    background-color: var(--gray-cards);
+    padding: 2.5rem;
+    border-radius: 8px;
+}
+
+.post + .post{
+    margin-top: 2rem;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header time{
+    font-size: 0.875rem;
+    color: var(--gray-text-apoio);
+}
+
+.avatar{
+    box-sizing: initial;
+    border-radius: 8px;
+    width: 4rem;
+    height: 4rem;
+    border: 2px solid var(--purple);
+    outline: 2px solid var(--gray-cards);
+}
+
+.authorInfo{
+    display: flex;
+    flex-direction: column;
+    line-height: 1.6;
+}
+
+.authorInfo strong{
+    font-size: 1rem;
+    color: var(--gray-text);
+
+}
+
+.authorInfo span{
+    font-size: 0.875rem;
+    color: var(--gray-text-apoio);
+}
+
+.author{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.content{
+    line-height: 1.6;
+    color: var(--gray-text-apoio);
+    margin-top: 1.5rem;
+}
+
+.content p{
+    margin-top: 1.5rem;
+}
+
+.content a{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--purple-darker);
+}
+
+.content a:hover{
+    color: var(--purple);
+}
+
+.comments{
+    margin-top: 1.5rem;
+    border-top: 1px solid var(--gray-divider);
+    padding-top: 1.5rem;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.comments strong{
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.comments textarea{
+    background-color: var(--gray-background);
+    border: none;
+    border-radius: 8px;
+    padding: 1rem;
+    line-height: 1.4;
+    color: var(--gray-text);
+}
+
+.comments textarea:focus{
+    outline: 1px solid var(--purple);    
+}
+
+.comments button{
+    margin-top: 1rem;
+    background-color: var(--purple-darker);
+    color: var(--white);
+    border: none;
+    border-radius: 8px;
+    padding: 1rem 1.5rem 0.875rem 1.5rem;
+    width: fit-content;
+    transition: background-color 0.1s;
+    cursor: pointer;
+}
+
+.comments footer{
+    max-height: 0;
+    visibility: hidden;
+}
+
+.comments:focus-within footer{
+    visibility: visible;
+    max-height: 100%;
+}
+
+.comments button:hover{
+    background-color: var(--purple);
+}
