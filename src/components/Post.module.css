@@ -123,3 +123,7 @@
 .comments button:hover{
     background-color: var(--purple);
 }
+
+.commentList{
+    margin-top: 2rem;
+}

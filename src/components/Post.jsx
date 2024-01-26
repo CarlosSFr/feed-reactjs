@@ -1,4 +1,6 @@
+import { ThumbsUp, Trash } from "@phosphor-icons/react";
 import styles from "./Post.module.css";
+import { Comment } from "./Comment";
 
 export function Post(){
     return(
@@ -21,12 +23,20 @@ export function Post(){
                 <p><a href="">#novoprojeto</a> <a href="">#nlw</a> <a href="">#rocketseat</a></p>
             </div>
 
-            <div className={styles.comments}>
+            <form className={styles.comments}>
                 <strong>Deixe seu feedback</strong>
                 <textarea placeholder="Escreva um comentário..."></textarea>
                 <footer><button>Publicar</button></footer>
                 
+            </form>
+
+            <div className={styles.commentList}>
+                <Comment />
+                <Comment />
+                <Comment />
             </div>
+
+            
         </article>
     )
 }

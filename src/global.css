@@ -7,8 +7,10 @@
     --gray-cards: #202024;
     --gray-divider: #323238;
     --gray-placeholder: #7c7c8a;
+    --gray-seila: #29292E;
     --purple-darker: #3b0087;
     --purple: #7a22d3;
+    --red: #F75A68;
 }
 
 :focus{
