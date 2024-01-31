@@ -12,28 +12,28 @@ const posts = [
     author: {
       name: "Carlos Freitas",
       role: "Web Developer",
-      avatar: "https://avatars.githubusercontent.com/u/93332419?v=4" 
+      avatarURL: "https://avatars.githubusercontent.com/u/93332419?v=4" 
     },
     content: [
       {type: "paragraph", content: "Falaa, galera!"},
       {type: "paragraph", content: "Acaber de subir um projeto, DoctorCare!"},
       {type: "link", content: "jane.design/doctorcare"},
     ],
-    publishedAt: new Date('2024-01-31 17:00:00')
+    publishedAt: new Date('2024-01-31 10:00:00'),
   },
   {
     id: 2,
     author: {
       name: "Liz Cabral",
       role: "UI/UX Designer",
-      avatar: "https://pbs.twimg.com/profile_images/1747843642528555008/m7Y51Rg1_400x400.jpg" 
+      avatarURL: "https://pbs.twimg.com/profile_images/1747843642528555008/m7Y51Rg1_400x400.jpg" 
     },
     content: [
       {type: "paragraph", content: "Mais um projeto em UX!"},
       {type: "paragraph", content: "Criando novos projetos com UI e UX design!"},
       {type: "link", content: "liz-ui.design"},
     ],
-    publishedAt: new Date('2024-01-31 17:00:00')
+    publishedAt: new Date('2024-01-31 08:00:00'),
   }
 
 ]
@@ -48,9 +48,11 @@ export function App() {
             {posts.map(post => {
               return (
                 <Post
-                author = {posts.author}
-                role = {posts.author}
-                content = {posts.content}
+                  author = {post.author}
+                  avatar={post.author.avatarURL}
+                  role = {post.author}
+                  content = {post.content}
+                  publishedAt={post.publishedAt}
                 />
               )
             })}
@@ -59,5 +61,3 @@ export function App() {
     </div>
   )
 }
-
-
