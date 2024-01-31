@@ -1,6 +1,7 @@
 import { ThumbsUp, Trash } from "@phosphor-icons/react";
 import styles from "./Post.module.css";
 import { Comment } from "./Comment";
+import { Avatar } from "./Avatar";
 
 export function Post(props){
 
@@ -8,7 +9,7 @@ export function Post(props){
         <article className={styles.post}>
             <header className={styles.header}>
                 <div className={styles.author}>
-                    <img className={styles.avatar} src="https://avatars.githubusercontent.com/u/93332419?v=4"/>
+                    <Avatar hasBorder src="https://avatars.githubusercontent.com/u/93332419?v=4" />
                         <div className={styles.authorInfo}>
                             <strong>{props.author.name}</strong>
                             <span></span>
