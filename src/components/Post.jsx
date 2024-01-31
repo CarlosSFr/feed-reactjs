@@ -2,15 +2,16 @@ import { ThumbsUp, Trash } from "@phosphor-icons/react";
 import styles from "./Post.module.css";
 import { Comment } from "./Comment";
 
-export function Post(){
+export function Post(props){
+
     return(
         <article className={styles.post}>
             <header className={styles.header}>
                 <div className={styles.author}>
                     <img className={styles.avatar} src="https://avatars.githubusercontent.com/u/93332419?v=4"/>
                         <div className={styles.authorInfo}>
-                            <strong>Carlos Freitas</strong>
-                            <span>Desenvolvedor de Software</span>
+                            <strong>{props.author.name}</strong>
+                            <span></span>
                         </div>
                 </div>
                 <time dateTime="2024-01-25 22:36:45">Publicado há 1h</time>
