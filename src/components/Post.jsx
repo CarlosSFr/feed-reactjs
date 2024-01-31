@@ -35,7 +35,7 @@ export function Post({author, content, publishedAt}){
                     if(cont.type === "paragraph"){
                         return <p>{cont.content}</p>
                     } else if(cont.type === "link"){
-                        return <a href="">{cont.content}</a>
+                        return <p><a href="">{cont.content}</a></p>
                     }
 
                 })}
